@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <!--header elements-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Order your very very own pizza! Assignment 2.">
+        <meta name="robots" content="noindex,nofollow">
+        <title>PARZA PELECE | ORDER MY PIZZA FOR YOU!!!</title>
+        <!--add css-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <!--logo container-->
+            <div>
+                <a href="index.html"><img src="./img/header.png" alt="Header LOGO!!"></a>
+            </div>
+            <!--site nav-->
+            <nav>
+                <menu>
+                    <li><a href="#">HOME.</a></li>
+                    <li><a href="#">BUY MORE PIZZA!</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">About.. PARZA!</a></li>
+                </menu>
+            </nav>
+        </header>
+        <!--header-->
+        <section>
+            <h1>ORDER, THAT, PIZZA!!</h1>
+        </section>
+        <!--main element, with three rows. first row asks for address info.
+        second row asks about information for the pizza(s), third is for toppings.-->
+        <main>
+            <section><!--address info-->
+                <div>
+                    <h3>Locational Information!!</h3>
+                </div>
+                <div>
+                    <form action="somefile.php" method="post">
+                        <label>Address Type: <select name="addresstype">
+                            <option value="house" selected="selected">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="hotel">Hotel</option>
+                            <option value="business">Business</option>
+                            <option value="basement">Basement</option>
+                            <option value="walls">In the Walls</option>
+                        </select></label>
+                        <label>Street Address: <input type="text" name="address" placeholder="Address" required></label>
+                        <label>City: <input type="text" name="city" placeholder="City" required></label>
+                        <label>Postal Code: <input type="text" name="postal" placeholder="Postal Code" required></label>
+                        <label>Apartment/Room Number: <input type="number" name="roomnumber" placeholder="Apt/Room #" required></label>
+                        
+                    </form>
+                </div>
+            </section>
+            <section><!--pizzas info-->
+                <div>
+                    <h3>Potentially Pizza-Related Information?</h3>
+                </div>
+                <div><!--amount-->
+                    <form action="somefile.php" method="post">
+                        <p>AMOUNT HERE <input type="number" name="amount" min=1 value=1></p>    
+                        <label>SIZE <select name="size">
+                            <option value="tiny">V. Tiny</option>
+                            <option value="small">Small</option>
+                            <option value="regular" selected="selected">Regular</option>
+                            <option value="large">Large</option>
+                            <option value="extralarge">Extra Large</option>
+                        </select></label>                    
+                    </form>
+                </div>
+            </section><section><!--pizza toppings-->
+                <div>
+                    <h3>Pizza Toppings!</h3>
+                </div>
+                <div><!--toppings-->
+                    <form action="somefile.php" method="post">
+                        <label><input type="checkbox" name="cheese"> Cheese (Extra of It!)</label>
+                        <label><input type="checkbox" name="pepperoni"> Pepperoni</label>
+                        <label><input type="checkbox" name="sausage"> Sausages</label>
+                        <label><input type="checkbox" name="pineapple"> ...pineapple.</label>
+                        <label><input type="checkbox" name="olives"> Olives</label>
+                        <label><input type="checkbox" name="mushrooms"> Mushrooms</label>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div>
+           <input type="submit" value="Send all this stuff for your Pizza(s)">
+        </div>
+        <footer>
+            <!--logo container-->
+            <div>
+                <a href="index.html"><img src="./img/header.png" alt="Header LOGO!!"></a>
+            </div>
+
+            <p>"PARZA" "PELECE" is in no way responsible for Poison or any other dangerous weaponry found in "Pizza".</p>
+        </footer>
+    </body>
+</html>
